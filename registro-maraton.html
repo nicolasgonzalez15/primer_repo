@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro para maratón</title>
+</head>
+<body>
+    <h1>Registro para maratón</h1>
+    <fieldset>
+        <legend>Datos personales</legend>
+        <br>
+        <label for="nombre">Ingrese su nombre</label>
+        <input type="text" name="nombre" id="nombre">
+        <br><br>
+
+        <label for="apellido">Ingrese su apellido</label>
+        <input type="text" name="apellido" id="apellido">
+        <br><br>
+
+        <label for="email">Ingrese su email</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+
+        <label for="fecha-nac">Ingrese su fecha de nacimiento</label>
+        <input type="date" name="fecha-nac" id="fecha-nac">
+        <br><br>
+
+        <label for="ficha-medica">Ingrese su ficha médica (PDF / WORD) </label>
+        <input type="file" name="ficha-medica" id="ficha-medica" accept=".pdf, .doc, .docx">
+        <br><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Carrera</legend>
+        <br>
+        <label for="distancia">Seleccionar maratón</label>
+        <ul>
+            <li>
+                <input type="radio" name="distancia" value="2 km" id="distancia-2km" checked>
+                <label for="distancia-2km">2 km</label>
+            </li>
+            <li>
+                <input type="radio" name="distancia" value="5 km" id="distancia-5km">
+                <label for="distancia-5km">5 km</label>
+            </li>
+            <li>
+                <input type="radio" name="distancia" value="10 km" id="distancia-10km">
+                <label for="distancia-10km">10 km</label>
+            </li>
+        </ul>
+       
+
+        <label for="marca">Selecciona la marca</label>
+        <select name="marca" id="marca">
+            <option value="nike">Nike</option>
+            <option value="adidas">Adidas</option>
+            <option value="puma">Puma</option>
+        </select>
+        <br><br>
+        <label for="dias-disponibles">Selecciona los dias disponibles</label>
+        <br><br>
+        <input type="checkbox" name="dias-disponibles" value="Lunes" id="dia-lunes" checked>
+        <label for="dia-lunes">Lunes</label>
+        <br>
+        <input type="checkbox" name="dias-disponibles" value="Miercoles" id="dia-miercoles">
+        <label for="dia-lunes">Miercoles</label>
+        <br>
+        <input type="checkbox" name="dias-disponibles" value="Viernes" id="dia-viernes">
+        <label for="dia-viernes">Viernes</label>
+    </fieldset>
+    <br>
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpiar</button>
+</body>
+</html>
